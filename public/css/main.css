@@ -2,29 +2,6 @@
   --maxw: 1150px;
 }
 
-@media screen and (max-width: 800px) {
-  .container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-  }
-  header {
-    margin: 0;
-    width: 100%;
-  }
-  .bird {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    margin: 80px 0px;
-  }
-  nav {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-  }
-}
 a {
   color: #aea299;
   text-decoration: none;
@@ -60,38 +37,69 @@ body {
 }
 
 .header {
+  position: relative;
+  z-index: 500;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   max-width: var(--maxw);
   margin: 30px auto;
 }
+@media screen and (min-width: 845px) {
+  .header {
+    flex-direction: row;
+  }
+}
 
 .nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  margin-top: 20px;
+}
+@media screen and (min-width: 845px) {
+  .nav {
+    margin: 0;
+  }
 }
 
 .menu {
   display: flex;
   gap: 50px;
   align-items: center;
-  margin: 0;
+  margin: 0 30px 0 0;
   list-style: none;
+}
+@media screen and (min-width: 845px) {
+  .menu {
+    margin: 0 60px 0 0;
+  }
 }
 
 .hero {
   max-width: var(--maxw);
-  margin: 0 auto;
+  margin: 100px auto;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   position: relative;
 }
+@media screen and (min-width: 845px) {
+  .hero {
+    flex-direction: row;
+  }
+}
 
 .hero__bird {
   position: absolute;
-  top: -60px;
+  top: -100px;
   left: 290px;
+}
+@media screen and (min-width: 845px) {
+  .hero__bird {
+    flex-direction: row;
+  }
 }
 
 .hero__left h1 {
@@ -107,9 +115,17 @@ body {
 
 .hero__buttons {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 50px;
-  padding: 70px 0 0 0;
+  margin: 0 auto;
+  padding: 50px 0 50px 0;
+}
+@media screen and (min-width: 845px) {
+  .hero__buttons {
+    flex-direction: row;
+    padding: 70px 0 0 0;
+  }
 }
 
 .hero__btn-left {
