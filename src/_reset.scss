@@ -1,0 +1,17 @@
+a {
+  color: $font-color;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  color: $primary-color;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Circular Std', sans-serif;
+}

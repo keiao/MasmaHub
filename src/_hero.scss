@@ -1,0 +1,86 @@
+.hero {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.hero__bird {
+  position: absolute;
+  top: -60px;
+  left: 290px;
+}
+
+.hero__left {
+  h1 {
+    font-size: 63px;
+    color: $font-color2;
+    margin: 0 0 24px 0;
+  }
+
+  p {
+    color: $font-color3;
+    font-size: size(2);
+    line-height: 1.5;
+  }
+}
+
+.hero__buttons {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 70px 0 0 0;
+}
+
+.hero__btn-left {
+  font-size: 20px;
+  color: $terciary-color;
+  cursor: pointer;
+  border-radius: 20px;
+  width: 240px;
+  height: 72px;
+  background-color: $primary-color;
+  border: none;
+  transition-duration: 0.3s;
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+.hero__play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  border: 1px solid $secondary-color;
+  transition-duration: 0.3s;
+  outline: none;
+  position: relative;
+  img {
+    width: 12px;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 4px solid rgba($secondary-color, 0.2);
+    transition: .3s all;
+  }
+  &:hover {
+    &:after {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.hero__btn-right:hover {
+  transform: scale(1.10);
+}
