@@ -321,17 +321,17 @@ img {
   transition: 0.3s all;
 }
 
-.sing__title {
+.instructions__title {
   padding-top: 20px;
   font-size: 32px;
   font-weight: 600;
   width: 100%;
 }
-.sing__title--center {
+.instructions__title--center {
   text-align: center;
 }
 
-.sing__p {
+.instructions__info {
   line-height: 1.5;
   color: #273150;
   font-size: 20px;
