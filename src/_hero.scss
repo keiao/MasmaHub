@@ -1,13 +1,15 @@
 .hero {
   max-width: var(--maxw);
-  margin: 100px auto;
+  margin: 40px auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   position: relative;
+  padding: 0 25px;
   @media screen and (min-width: $medium) {
     flex-direction: row;
+    margin: 100px auto;
   }
 }
 
@@ -22,7 +24,7 @@
 
 .hero__left {
   h1 {
-    font-size: 63px;
+    font-size: 42px;
     color: $font-color2;
     margin: 0 0 24px 0;
   }
@@ -32,16 +34,23 @@
     font-size: 20px;
     line-height: 1.5;
   }
+  @media screen and (min-width: $medium) {
+    h1 {
+      font-size: 63px;
+    }
+  }
 }
 
 .hero__buttons {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 50px;
   margin: 0 auto;
-  padding: 50px 0 50px 0;
+  padding: 20px 0 50px 0;
   @media screen and (min-width: $medium) {
+    justify-content: flex-start;
     flex-direction: row;
     padding: 70px 0 0 0;
   }
