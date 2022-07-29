@@ -17,7 +17,7 @@ a:hover {
 }
 
 body {
-  font-family: "Circular Std", sans-serif;
+  font-family: "Circular Std";
 }
 
 img {
@@ -25,7 +25,7 @@ img {
 }
 
 .text__center {
-  text-align: center;
+  text-align: c;
 }
 
 .header {
@@ -124,18 +124,24 @@ img {
 }
 
 .hero__left h1 {
-  font-size: 42px;
+  font-size: 30px;
   color: black;
   margin: 0 0 24px 0;
+  text-align: center;
 }
 .hero__left p {
   color: #4c4d4b;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.5;
+  text-align: left;
 }
 @media screen and (min-width: 845px) {
   .hero__left h1 {
     font-size: 63px;
+    text-align: left;
+  }
+  .hero__left p {
+    max-width: 70%;
   }
 }
 
@@ -298,6 +304,7 @@ img {
 .instructions__items--vCenter {
   justify-content: center;
 }
+
 .instructions__itemsCicles {
   margin: 42px auto;
   background: #ff6100;
@@ -335,4 +342,103 @@ img {
   line-height: 1.5;
   color: #273150;
   font-size: 20px;
+}
+
+.features {
+  background: #ff6100;
+  position: relative;
+}
+
+.features__content {
+  max-width: var(--maxw);
+  width: 100%;
+  margin: 0 auto;
+  padding: 55px 25px;
+}
+@media screen and (min-width: 845px) {
+  .features__content {
+    padding: 65px 0;
+  }
+}
+
+.features_tittle {
+  font-size: 40px;
+  color: white;
+  margin: 0 0 70px 0;
+}
+
+.features__info {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media screen and (min-width: 845px) {
+  .features__info {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.features__items {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+@media screen and (min-width: 845px) {
+  .features__items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }
+}
+
+.features__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.features__item img {
+  height: 33px;
+  width: 33px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: 0 100%;
+     object-position: 0 100%;
+  margin-bottom: 25px;
+}
+.features__item span {
+  font-size: 30px;
+  color: white;
+  margin: 0;
+  font-weight: 500;
+}
+.features__item p {
+  max-width: 85%;
+  line-height: 1.5;
+  color: white;
+  font-weight: lighter;
+  font-size: 15px;
+  margin: 0;
+  padding: 30px 0px;
+}
+
+.features__imgBg {
+  display: none;
+}
+.features__imgBg img {
+  height: 300px;
+}
+@media screen and (min-width: 845px) {
+  .features__imgBg {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -30px;
+  }
+  .features__imgBg img {
+    height: 600px;
+  }
+}
+
+.empty {
+  height: 120px;
 }/*# sourceMappingURL=main.css.map */
