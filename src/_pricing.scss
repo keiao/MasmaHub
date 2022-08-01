@@ -1,0 +1,343 @@
+.pricing {
+  margin: 0 auto;
+  max-width: var(--maxw);
+  padding: 100px 0px;
+  position: relative;
+  z-index: 200;
+}
+
+.pricing__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px;
+  font-size: 40px;
+  font-weight: bold;
+
+  @media screen and (min-width: $medium) {
+    padding: 100px 0px;
+    font-size: 50px;
+  }
+}
+
+.pricing__cards {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+
+  @media screen and (min-width: $medium) {
+    flex-direction: row;
+  }
+}
+
+.card__one {
+  width: 250px;
+  height: 460px;
+  background: $terciary-color;
+  box-shadow: $box-shadow;
+  border-radius: 12px;
+
+  @media screen and (min-width: $medium) {
+    width: 359px;
+    height: 568px;
+  }
+}
+
+.card__one-info {
+  padding: 50px 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    width: 100px;
+    height: 100px;
+  }
+
+  div {
+    font-size: 40px;
+    font-weight: bold;
+    padding: 36px 0px 0px;
+  }
+
+  span {
+    font-family: 'SF Pro Display', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $font-color5;
+    padding: 14px 0px 0px;
+
+    .span_1 {
+      font-size: 20px;
+    }
+
+    .span_2 {
+      font-size: 50px;
+    }
+
+    .span_3 {
+      font-size: 10px;
+    }
+  }
+
+  p {
+    line-height: 1.5;
+    text-align: center;
+    font-size: 15px;
+    max-width: 80%;
+  }
+
+  @media screen and (min-width: $medium) {
+
+    padding: 70px 0px;
+    img {
+      width: 119px;
+      height: 119px;
+    }
+  
+    div {
+      font-size: 50px;
+      font-weight: bold;
+      padding: 36px 0px 0px;
+    }
+  
+    span {
+      font-family: 'SF Pro Display', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $font-color5;
+      padding: 14px 0px 0px;
+  
+      .span_1 {
+        font-size: 30px;
+      }
+  
+      .span_2 {
+        font-size: 60px;
+      }
+  
+      .span_3 {
+        font-size: 14px;
+      }
+    }
+  
+    p {
+      line-height: 1.5;
+      text-align: center;
+      font-size: 20px;
+      max-width: 80%;
+    }
+  }
+
+}
+
+.card__two {
+  width: 250px;
+  height: 460px;
+  background: $primary-color;
+  border-radius: 12px;
+
+  @media screen and (min-width: $medium) {
+    width: 359px;
+    height: 644px;
+  }
+}
+
+.card__two-info{
+  padding: 50px 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: $terciary-color;
+
+  img {
+    width: 100px;
+    height: 100px;
+  }
+
+  div {
+    font-size: 40px;
+    font-weight: bold;
+    padding: 36px 0px 0px;
+  }
+
+  span {
+    font-family: 'SF Pro Display', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 0px 0px;
+
+    .span_1 {
+      font-size: 20px;
+    }
+
+    .span_2 {
+      font-size: 50px;
+    }
+
+    .span_3 {
+      font-size: 10px;
+    }
+  }
+
+  p {
+    line-height: 1.5;
+    text-align: center;
+    font-size: 15px;
+    max-width: 80%;
+  }
+
+  @media screen and (min-width: $medium) {
+
+    padding: 70px 0px;
+    img {
+      width: 119px;
+      height: 119px;
+    }
+  
+    div {
+      font-size: 50px;
+      font-weight: bold;
+      padding: 36px 0px 0px;
+    }
+  
+    span {
+      font-family: 'SF Pro Display', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 14px 0px 0px;
+  
+      .span_1 {
+        font-size: 30px;
+      }
+  
+      .span_2 {
+        font-size: 60px;
+      }
+  
+      .span_3 {
+        font-size: 14px;
+      }
+    }
+  
+    p {
+      line-height: 1.5;
+      text-align: center;
+      font-size: 20px;
+      max-width: 80%;
+    }
+  }
+
+}
+
+.card__three {
+  width: 250px;
+  height: 460px;
+  background: $terciary-color;
+  box-shadow: $box-shadow;
+  border-radius: 12px;
+
+  @media screen and (min-width: $medium) {
+    width: 359px;
+    height: 568px;
+  }
+}
+
+.card__three-info {
+  padding: 50px 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    width: 100px;
+    height: 100px;
+  }
+
+  div {
+    font-size: 40px;
+    font-weight: bold;
+    padding: 36px 0px 0px;
+  }
+
+  span {
+    font-family: 'SF Pro Display', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $font-color5;
+    padding: 14px 0px 0px;
+
+    .span_1 {
+      font-size: 20px;
+    }
+
+    .span_2 {
+      font-size: 50px;
+    }
+
+    .span_3 {
+      font-size: 10px;
+    }
+  }
+
+  p {
+    line-height: 1.5;
+    text-align: center;
+    font-size: 15px;
+    max-width: 80%;
+  }
+
+  @media screen and (min-width: $medium) {
+
+    padding: 70px 0px;
+    img {
+      width: 119px;
+      height: 119px;
+    }
+  
+    div {
+      font-size: 50px;
+      font-weight: bold;
+      padding: 36px 0px 0px;
+    }
+  
+    span {
+      font-family: 'SF Pro Display', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $font-color5;
+      padding: 14px 0px 0px;
+  
+      .span_1 {
+        font-size: 30px;
+      }
+  
+      .span_2 {
+        font-size: 60px;
+      }
+  
+      .span_3 {
+        font-size: 14px;
+      }
+    }
+  
+    p {
+      line-height: 1.5;
+      text-align: center;
+      font-size: 20px;
+      max-width: 80%;
+    }
+  }
+
+}
