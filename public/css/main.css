@@ -437,7 +437,8 @@ img {
 }
 
 .testimonials {
-  max-width: var(--maxw);
+  position: relative;
+  z-index: 100;
   margin: 0 auto;
   padding: 117px 0px;
 }
@@ -446,19 +447,19 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 100px 0px;
   font-size: 40px;
   font-weight: bold;
+  margin-bottom: 15px;
 }
 @media screen and (min-width: 845px) {
   .testimonials__title {
     font-size: 50px;
-    padding: 117px 0px;
   }
 }
 
 .testimonials__content {
-  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+  max-width: var(--maxw);
+  box-shadow: 0 12px 30px 0 hsla(180deg, 11%, 4%, 0.08);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -466,6 +467,7 @@ img {
   margin: 0 auto;
   width: 320px;
   height: 450px;
+  background: white;
   border-radius: 24px;
 }
 @media screen and (min-width: 845px) {
@@ -473,6 +475,8 @@ img {
     width: 769px;
     height: 338px;
     border-radius: 24px;
+    position: relative;
+    z-index: 200;
   }
 }
 
@@ -531,6 +535,34 @@ img {
   }
 }
 
+.testimonials__background {
+  display: none;
+}
+@media screen and (min-width: 845px) {
+  .testimonials__background {
+    display: block;
+  }
+  .testimonials__background .testimonials__nube-1 {
+    position: absolute;
+    z-index: 50;
+    left: 0;
+    top: 10%;
+    opacity: 0.4;
+    width: 500px;
+    height: 500px;
+  }
+  .testimonials__background .testimonials__nube-2 {
+    position: absolute;
+    z-index: 50;
+    transform: scaleX(-1);
+    right: 0;
+    top: 10%;
+    opacity: 0.4;
+    width: 500px;
+    height: 500px;
+  }
+}
+
 .team {
   margin: 0 auto;
   position: relative;
@@ -581,7 +613,7 @@ img {
   left: 0;
   top: 60%;
   opacity: 0.4;
-  z-index: 10;
+  z-index: 100;
 }
 
 .team__nube-2 {
@@ -589,11 +621,13 @@ img {
   position: absolute;
   right: 0;
   top: 20%;
-  z-index: 10;
+  z-index: 100;
   opacity: 0.4;
 }
 
 .team__content {
+  position: relative;
+  z-index: 100;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -622,10 +656,14 @@ img {
   text-align: center;
 }
 @media screen and (min-width: 845px) {
+  .team__profile-1 div {
+    text-align: left;
+  }
   .team__profile-1 img {
     width: 327px;
     height: 327px;
     border-radius: 5%;
+    transition: all 0.3s;
   }
   .team__profile-1 img:hover {
     box-shadow: 0px 0px 10px 5px rgb(255, 197, 96);
@@ -636,11 +674,15 @@ img {
   width: 250px;
   height: 250px;
   border-radius: 5%;
+  transition: all 0.3s;
 }
 .team__profile-2 div {
   text-align: center;
 }
 @media screen and (min-width: 845px) {
+  .team__profile-2 div {
+    text-align: left;
+  }
   .team__profile-2 img {
     width: 327px;
     height: 327px;
@@ -655,11 +697,15 @@ img {
   width: 250px;
   height: 250px;
   border-radius: 5%;
+  transition: all 0.3s;
 }
 .team__profile-3 div {
   text-align: center;
 }
 @media screen and (min-width: 845px) {
+  .team__profile-3 div {
+    text-align: left;
+  }
   .team__profile-3 img {
     width: 327px;
     height: 327px;
@@ -721,7 +767,7 @@ img {
   width: 250px;
   height: 460px;
   background: white;
-  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 12px 30px 0 hsla(180deg, 11%, 4%, 0.08);
   border-radius: 12px;
 }
 @media screen and (min-width: 845px) {
@@ -765,10 +811,12 @@ img {
   font-size: 10px;
 }
 .card__one-info p {
+  padding: 19px 0px 0px;
   line-height: 1.5;
   text-align: center;
   font-size: 15px;
   max-width: 80%;
+  margin: 0;
 }
 @media screen and (min-width: 845px) {
   .card__one-info {
@@ -780,31 +828,18 @@ img {
   }
   .card__one-info div {
     font-size: 50px;
-    font-weight: bold;
-    padding: 36px 0px 0px;
   }
-  .card__one-info span {
-    font-family: "SF Pro Display", sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #F5894E;
-    padding: 14px 0px 0px;
-  }
-  .card__one-info span .span_1 {
+  .card__one-info .span_1 {
     font-size: 30px;
   }
-  .card__one-info span .span_2 {
+  .card__one-info .span_2 {
     font-size: 60px;
   }
-  .card__one-info span .span_3 {
+  .card__one-info .span_3 {
     font-size: 14px;
   }
   .card__one-info p {
-    line-height: 1.5;
-    text-align: center;
     font-size: 20px;
-    max-width: 80%;
   }
 }
 
@@ -855,10 +890,12 @@ img {
   font-size: 10px;
 }
 .card__two-info p {
+  padding: 19px 0px 0px;
   line-height: 1.5;
   text-align: center;
   font-size: 15px;
   max-width: 80%;
+  margin: 0;
 }
 @media screen and (min-width: 845px) {
   .card__two-info {
@@ -870,30 +907,18 @@ img {
   }
   .card__two-info div {
     font-size: 50px;
-    font-weight: bold;
-    padding: 36px 0px 0px;
   }
-  .card__two-info span {
-    font-family: "SF Pro Display", sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 14px 0px 0px;
-  }
-  .card__two-info span .span_1 {
+  .card__two-info .span_1 {
     font-size: 30px;
   }
-  .card__two-info span .span_2 {
+  .card__two-info .span_2 {
     font-size: 60px;
   }
-  .card__two-info span .span_3 {
+  .card__two-info .span_3 {
     font-size: 14px;
   }
   .card__two-info p {
-    line-height: 1.5;
-    text-align: center;
     font-size: 20px;
-    max-width: 80%;
   }
 }
 
@@ -901,7 +926,7 @@ img {
   width: 250px;
   height: 460px;
   background: white;
-  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 12px 30px 0 hsla(180deg, 11%, 4%, 0.08);
   border-radius: 12px;
 }
 @media screen and (min-width: 845px) {
@@ -945,10 +970,12 @@ img {
   font-size: 10px;
 }
 .card__three-info p {
+  padding: 19px 0px 0px;
   line-height: 1.5;
   text-align: center;
   font-size: 15px;
   max-width: 80%;
+  margin: 0;
 }
 @media screen and (min-width: 845px) {
   .card__three-info {
@@ -960,30 +987,17 @@ img {
   }
   .card__three-info div {
     font-size: 50px;
-    font-weight: bold;
-    padding: 36px 0px 0px;
   }
-  .card__three-info span {
-    font-family: "SF Pro Display", sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #F5894E;
-    padding: 14px 0px 0px;
-  }
-  .card__three-info span .span_1 {
+  .card__three-info .span_1 {
     font-size: 30px;
   }
-  .card__three-info span .span_2 {
+  .card__three-info .span_2 {
     font-size: 60px;
   }
-  .card__three-info span .span_3 {
+  .card__three-info .span_3 {
     font-size: 14px;
   }
   .card__three-info p {
-    line-height: 1.5;
-    text-align: center;
     font-size: 20px;
-    max-width: 80%;
   }
 }/*# sourceMappingURL=main.css.map */

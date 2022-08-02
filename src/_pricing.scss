@@ -36,7 +36,7 @@
   width: 250px;
   height: 460px;
   background: $terciary-color;
-  box-shadow: $box-shadow;
+  box-shadow: 0 12px 30px 0 hsl(180deg 11% 4% / 8%);
   border-radius: 12px;
 
   @media screen and (min-width: $medium) {
@@ -85,14 +85,15 @@
   }
 
   p {
+    padding: 19px 0px 0px;
     line-height: 1.5;
     text-align: center;
     font-size: 15px;
     max-width: 80%;
+    margin: 0;
   }
 
   @media screen and (min-width: $medium) {
-
     padding: 70px 0px;
     img {
       width: 119px;
@@ -101,17 +102,8 @@
   
     div {
       font-size: 50px;
-      font-weight: bold;
-      padding: 36px 0px 0px;
     }
-  
-    span {
-      font-family: 'SF Pro Display', sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: $font-color5;
-      padding: 14px 0px 0px;
+
   
       .span_1 {
         font-size: 30px;
@@ -124,13 +116,10 @@
       .span_3 {
         font-size: 14px;
       }
-    }
+  
   
     p {
-      line-height: 1.5;
-      text-align: center;
       font-size: 20px;
-      max-width: 80%;
     }
   }
 
@@ -188,10 +177,12 @@
   }
 
   p {
+    padding: 19px 0px 0px;
     line-height: 1.5;
     text-align: center;
     font-size: 15px;
     max-width: 80%;
+    margin: 0;
   }
 
   @media screen and (min-width: $medium) {
@@ -204,16 +195,8 @@
   
     div {
       font-size: 50px;
-      font-weight: bold;
-      padding: 36px 0px 0px;
     }
-  
-    span {
-      font-family: 'SF Pro Display', sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 14px 0px 0px;
+
   
       .span_1 {
         font-size: 30px;
@@ -226,13 +209,10 @@
       .span_3 {
         font-size: 14px;
       }
-    }
+  
   
     p {
-      line-height: 1.5;
-      text-align: center;
       font-size: 20px;
-      max-width: 80%;
     }
   }
 
@@ -242,7 +222,8 @@
   width: 250px;
   height: 460px;
   background: $terciary-color;
-  box-shadow: $box-shadow;
+  box-shadow: 0 12px 30px 0 hsl(180deg 11% 4% / 8%);
+
   border-radius: 12px;
 
   @media screen and (min-width: $medium) {
@@ -291,14 +272,15 @@
   }
 
   p {
+    padding: 19px 0px 0px;
     line-height: 1.5;
     text-align: center;
     font-size: 15px;
     max-width: 80%;
+    margin: 0;
   }
 
   @media screen and (min-width: $medium) {
-
     padding: 70px 0px;
     img {
       width: 119px;
@@ -307,17 +289,8 @@
   
     div {
       font-size: 50px;
-      font-weight: bold;
-      padding: 36px 0px 0px;
     }
-  
-    span {
-      font-family: 'SF Pro Display', sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: $font-color5;
-      padding: 14px 0px 0px;
+
   
       .span_1 {
         font-size: 30px;
@@ -330,13 +303,10 @@
       .span_3 {
         font-size: 14px;
       }
-    }
+  
   
     p {
-      line-height: 1.5;
-      text-align: center;
       font-size: 20px;
-      max-width: 80%;
     }
   }
 
