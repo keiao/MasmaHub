@@ -8,14 +8,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px 0px;
   font-size: 40px;
   font-weight: bold;
-  margin: 0 auto;
+  margin-bottom: 30px;
 
   @media screen and (min-width: $medium) {
-    padding: 100px 0px;
     font-size: 50px;
+    margin-bottom: 50px;
   }
 }
 
@@ -80,7 +79,7 @@
   }
 }
 
-.team__profile-1 {
+.team__profile {
   img {
     width: 250px;
     height: 250px;
@@ -100,67 +99,6 @@
       width: 327px;
       height: 327px;
       border-radius: 5%;
-      transition: all 0.3s;
-      &:hover {
-        box-shadow: 0px 0px 10px 5px rgb(255, 197, 96);
-      }
-    }
-  }
-}
-
-.team__profile-2 {
-  img {
-    width: 250px;
-    height: 250px;
-    border-radius: 5%;
-    transition: all 0.3s;
-  }
-
-  div {
-    text-align: center;
-  }
-
-  @media screen and (min-width: $medium) {
-    div {
-      text-align: left;
-    }
-    img {
-      width: 327px;
-      height: 327px;
-      border-radius: 5%;
-
-      &:hover {
-        box-shadow: 0px 0px 10px 5px rgb(180, 112, 189);
-      }
-    }
-  }
-}
-
-.team__profile-3 {
-  img {
-    width: 250px;
-    height: 250px;
-    border-radius: 5%;
-    transition: all 0.3s;
-  }
-
-  div {
-    text-align: center;
-  }
-
-  @media screen and (min-width: $medium) {
-    div {
-      text-align: left;
-    }
-    
-    img {
-      width: 327px;
-      height: 327px;
-      border-radius: 5%;
-
-      &:hover {
-        box-shadow: 0px 0px 10px 5px rgb(61, 163, 165);
-      }
     }
   }
 }
@@ -174,4 +112,39 @@
 .team__info {
   font-family: 'Poppins';
   color: $font-color3;
+}
+
+
+
+.team__profile {
+  @media screen and (min-width: $medium) {
+    &.team__profile--yellow {
+      img {
+        transition: all 0.3s;
+  
+        &:hover {
+          box-shadow: 0px 0px 10px 5px rgb(255, 197, 96);
+        }
+      }
+    }
+    &.team__profile--purple {
+      img {
+        transition: all 0.3s;
+  
+        &:hover {
+          box-shadow: 0px 0px 10px 5px #c388c2;
+        }
+      }
+    }
+    &.team__profile--blue {
+      img {
+        transition: all 0.3s;
+  
+        &:hover {
+          box-shadow: 0px 0px 10px 5px #3da3a5;
+        }
+      }
+    }
+  }
+ 
 }
