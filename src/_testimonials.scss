@@ -29,7 +29,7 @@
   margin: 0 auto;
   width: 320px;
   height: 450px;
-  background: $terciary-color;
+  background: $third-color;
   border-radius: 24px;
 
   @media screen and (min-width: $medium) {
@@ -88,7 +88,7 @@
   }
 
   .info__client {
-    font-family: 'Poppins';
+    font-family: var(--font2);
     color: $font-color3;
   }
   @media screen and (min-width: $medium) {

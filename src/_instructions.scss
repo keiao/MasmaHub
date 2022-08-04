@@ -13,7 +13,7 @@
     gap: initial;
     &:after {
       content: '';
-      border: 50px solid rgba($secondary-color, 0.6);
+      border: 50px solid rgba($second-color, 0.6);
       width: 600px;
       height: 600px;
       border-radius: 50%;
@@ -41,14 +41,14 @@
 
 .instructions__itemsCicles {
   margin: 42px auto;
-  background: $primary-color;
+  background: $first-color;
   width: 38px;
   height: 38px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: $terciary-color;
+  color: $third-color;
   font-size: 28px;
   font-weight: 600;
 
@@ -58,7 +58,7 @@
     width: 58px;
     height: 58px;
     border-radius: 50%;
-    border: 2px solid rgba($secondary-color, 1);
+    border: 2px solid rgba($second-color, 1);
     transition: .3s all;
   }
 

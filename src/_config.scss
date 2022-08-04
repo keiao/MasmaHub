@@ -1,6 +1,6 @@
-$primary-color: #ff6100;
-$secondary-color: #f5c9b0;
-$terciary-color: white;
+$first-color: #ff6100;
+$second-color: #f5c9b0;
+$third-color: white;
 $font-color:  #aea299;
 $font-color2:  black; 
 $font-color3:  #4c4d4b; 
@@ -16,5 +16,8 @@ $box-shadow: 0 2px 6px 0 rgba(0,0,0,0.6);
 
 :root {
   --maxw: 1150px;
+  --font1: 'Circular Std', sans-serif;
+  --font2: 'Poppins';
+  --font3: 'SF Pro Display', sans-serif;
 }
- 
+

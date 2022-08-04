@@ -3,7 +3,7 @@
   max-width: var(--maxw);
 
   @media screen and (min-width: $medium) {
-    padding: 0px 0px 109px;
+    margin: 0 auto 109px auto;
   }
 }
 
@@ -11,16 +11,19 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  background: $primary-color;
+  background: $first-color;
   border-radius: 28px;
   margin: 0 auto;
   width: 320px;
   height: 550px;
+  padding: 0 30px;
 
   @media screen and (min-width: $medium) {
     flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
     width: 100%;
+    padding: 0 41px 0 81px;
   }
 }
 
@@ -37,13 +40,10 @@
   align-items: center;
   text-align: center;
   padding: 85px 15px 0 15px;
-  @media screen and (min-width: $medium) {
-    padding: 0;
-  }
 
   span {
     font-size: 30px;
-    color: $terciary-color;
+    color: $third-color;
     padding-top: 50px;
   }
 
@@ -51,8 +51,7 @@
     margin: 0;
     line-height: 1.5;
     font-size: 15px;
-    color: $terciary-color;
-    max-width: 70%;
+    color: $third-color;
     padding: 22px 0px;
   }
 
@@ -61,11 +60,11 @@
     border-radius: 12px;
     width: 150px;
     height: 50px;
-    background-color: $terciary-color;
+    background-color: $third-color;
     border: none;
 
     a {
-      color: $primary-color;
+      color: $first-color;
     }
   }
 
@@ -76,7 +75,7 @@
     align-items: flex-start;
     text-align: left;
     max-width: 480px;
-    padding-top: 55px;
+    padding: 55px 0 0 0;
 
     span {
       font-size: 46px;
@@ -97,7 +96,7 @@
       &:hover {
         background-color: #f6be4a;  
          a {
-          color: $terciary-color;
+          color: $third-color;
          }
       }
     }

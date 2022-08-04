@@ -1,9 +1,10 @@
 .pricing {
   margin: 0 auto;
   max-width: var(--maxw);
-  padding: 150px 0px;
+  margin: 200px auto;
+
   @media screen and (min-width: $medium) {
-    padding: 200px 0px;
+    margin: 150px auto;
     position: relative;
     z-index: 200;
   }
@@ -15,7 +16,7 @@
   align-items: center;
   font-size: 40px;
   font-weight: bold;
-  margin-bottom: 50px;
+  margin: 0 0 50px 0;
 
   @media screen and (min-width: $medium) {
     font-size: 50px;
@@ -39,17 +40,16 @@
 .card__item {
   width: 250px;
   height: 460px;
-  background-color: $terciary-color;
-  box-shadow: 0 12px 30px 0 hsl(180deg 11% 4% / 8%);
+  background-color: $third-color;
+  box-shadow: 0 12px 30px 0 rgba(9, 11, 11, 0.08);
   border-radius: 12px;
 
-    &.card__item--orange {
-      background-color: orangered;
-      width: 250px;
-      height: 560px;
-      color: white;
-    }
-
+  &.card__item--orange {
+    background-color: $first-color;
+    width: 250px;
+    height: 560px;
+    color: white;
+  }
 
   @media screen and (min-width: $medium) {
     width: 359px;
@@ -62,9 +62,7 @@
   }
 }
 
-.card__item-info-1,
-.card__item-info-2,
-.card__item-info-3 {
+.card__item-info {
   padding: 50px 0px;
   display: flex;
   justify-content: center;
@@ -76,39 +74,39 @@
     height: 100px;
   }
 
-  div {
+  h3 {
     font-size: 40px;
     font-weight: bold;
-    padding: 36px 0px 0px;
+    margin: 36px 0px 0px;
   }
 
 
-  .card__span_white{
-    color: $font-color5;
-  }
-  
-  .card__span_white,
-  .card__span_orange {
-    font-family: 'SF Pro Display', sans-serif;
+  .card__price {
+    font-family: var(--font3);
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 14px 0px 0px;
+    color: $font-color5;
 
-    .card__itemSpan1 {
+    .card__priceSymbol {
       font-size: 20px;
     }
 
-    .card__itemSpan2{
+    .card__priceNumber {
       font-size: 50px;
     }
 
-    .card__itemSpan3 {
+    .card__priceMonth {
       font-size: 10px;
     }
   }
 
-  p {
+  .card__price--orange {
+    color: $third-color;
+  }
+
+  .card_text {
     padding: 19px 0px 0px;
     line-height: 1.5;
     text-align: center;
@@ -119,33 +117,31 @@
 
   @media screen and (min-width: $medium) {
     padding: 70px 0px;
+
     img {
       width: 119px;
       height: 119px;
     }
-  
-    div {
+
+    h3 {
       font-size: 50px;
     }
 
-  
-      .span_1 {
-        font-size: 30px;
-      }
-  
-      .span_2 {
-        font-size: 60px;
-      }
-  
-      .span_3 {
-        font-size: 14px;
-      }
-  
-  
-    p {
+    .card__priceSymbol {
+      font-size: 30px;
+    }
+
+    .card__priceNumber {
+      font-size: 60px;
+    }
+
+    .card__priceMonth {
+      font-size: 14px;
+    }
+
+    .card_text {
       font-size: 20px;
     }
   }
 
 }
-

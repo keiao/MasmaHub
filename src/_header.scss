@@ -37,12 +37,12 @@
 
 .btn-sing {
   font-size: 15px;
-  color: $terciary-color;
+  color: $third-color;
   cursor: pointer;
   border-radius: 15px;
   width: 100px;
   height: 46px;
-  background-color: $primary-color;
+  background-color: $first-color;
   border: none;
   transition-duration: 0.3s;
   @media screen and (min-width: $medium) {
@@ -53,6 +53,6 @@
 }
 
 .btn-sing:hover {
-  background-color: $secondary-color;
+  background-color: $second-color;
   transform: scale(1.02);
 }

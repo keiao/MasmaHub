@@ -65,12 +65,12 @@
 
 .hero__btn-left {
   font-size: 20px;
-  color: $terciary-color;
+  color: $third-color;
   cursor: pointer;
   border-radius: 20px;
   width: 240px;
   height: 72px;
-  background-color: $primary-color;
+  background-color: $first-color;
   border: none;
   transition-duration: 0.3s;
   &:hover {
@@ -87,7 +87,7 @@
   border-radius: 50%;
   width: 80px;
   height: 80px;
-  border: 1px solid $secondary-color;
+  border: 1px solid $second-color;
   transition-duration: 0.3s;
   outline: none;
   position: relative;
@@ -100,7 +100,7 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    border: 4px solid rgba($secondary-color, 0.2);
+    border: 4px solid rgba($second-color, 0.2);
     transition: .3s all;
   }
   &:hover {

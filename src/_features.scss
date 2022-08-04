@@ -1,5 +1,5 @@
 .features {
-  background: $primary-color;
+  background: $first-color;
   position: relative;
 }
 
@@ -16,7 +16,7 @@
 
 .features_tittle {
   font-size: 40px;
-  color: $terciary-color;
+  color: $third-color;
   margin: 0 0 70px 0;
 }
 
@@ -55,7 +55,7 @@
 
   span {
     font-size: 30px;
-    color: $terciary-color;
+    color: $third-color;
     margin: 0;
     font-weight: 500;
   }
@@ -63,7 +63,7 @@
   p {
     max-width: 85%;
     line-height: 1.5;
-    color: $terciary-color;
+    color: $third-color;
     font-weight: lighter;
     font-size: 15px;
     margin: 0;
