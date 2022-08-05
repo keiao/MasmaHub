@@ -24,11 +24,14 @@
 
   p {
     margin: 0;
-    padding-right: 40px;
   }
 
   @media screen and (min-width: $medium) {
     justify-content: flex-start;
+    p {
+      margin: 0;
+      padding-right: 40px;
+    }
   }
 }
 
